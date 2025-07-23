@@ -7,7 +7,7 @@ const ClosureOfTrandingWindow = () => {
 
   const closureoftrandingwindow = [
     {
-      year: 2024-2025,
+      year: 2025,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "Closure-of-Trading-Window-Quarter-3.pdf" },
@@ -17,7 +17,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year: 2023-2024,
+      year: 2024,
       reports: [
 
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4 (1).pdf" },
@@ -27,7 +27,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year: 2022-2023,
+      year: 2023,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4 (2)-2022.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "Closure-of-Trading-Window-Quarter-3 (1)-2022.pdf" },
@@ -36,7 +36,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year: 2021-2022,
+      year: 2022,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4 (2)-2021.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "Closure-of-Trading-Window-Quarter-3-2021.pdf" },
@@ -45,7 +45,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year:   2020-2021,
+      year: 2021,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4 (2)-2020.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "Closure-of-Trading-Window-Quarter-3 (1)-2020.pdf" },
@@ -54,7 +54,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year:  2019-2020,
+      year: 2020,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4 (2)02019.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "" },
@@ -63,7 +63,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year:  2018-2019,
+      year: 2019,
       reports: [
         { label: "Closure of Trading Window – Quarter 1", file: "Closure-of-Trading-window-02.08.2018_01.pdf" },
         { label: "Closure of Trading Window – Quarter 2", file: "Closure-of-Trading-window-25.10.2018_02.pdf" },
@@ -72,7 +72,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year:  2017-2018,
+      year: 2018,
       reports: [
         { label: "Closure of Trading Window – Quarter 1", file: "Closure-of-Trading-window-22.07.2017_01.pdf" },
         { label: "Closure of Trading Window – Quarter 2", file: "Closure-of-Trading-window-30.11.2017_02.pdf" },
@@ -81,7 +81,7 @@ const ClosureOfTrandingWindow = () => {
       ],
     },
     {
-      year:  2016-2017,
+      year: 2017,
       reports: [
         { label: "Closure of Trading Window – Quarter 1", file: "Closure-of-Trading-window-03.08.2016_01.pdf" },
         { label: "Closure of Trading Window – Quarter 2", file: "Closure-of-Trading-window-20.10.2016_02.pdf" },
@@ -91,51 +91,51 @@ const ClosureOfTrandingWindow = () => {
     },
   ]
   return (
-   <>
-   <Header/>
-    <div>
-      {/* Hero Section */}
-      <div className="relative bg-[#193267]  mb-10 p-28 w-full px-32">
-        <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif  font-bold text-left">
-          Closure of Trading Window
-        </h1>
+    <>
+      <Header />
+      <div>
+        {/* Hero Section */}
+        <div className="relative bg-[#193267]  mb-10 p-28 w-full px-32">
+          <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif  font-bold text-left">
+            Closure of Trading Window
+          </h1>
+        </div>
+
+
+
+        {/* pdf section  */}
+        <div className="py-12 px-4  font-signika max-w-7xl mx-auto">
+          {closureoftrandingwindow.map((yearGroup, index) => (
+            <div key={index} className="mb-10">
+              <h2 className="text-2xl font-extrabold text-[#0b3a6a] uppercase mb-4">
+                For the Year {yearGroup.year}
+              </h2>
+              <ul className="list-disc pl-5 text-[#0b3a6a] font-medium space-y-2">
+                {yearGroup.reports.map((report, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`/investor/closureoftrandingwindow/${report.file}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {report.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <hr className="mt-4 border-gray-300" />
+            </div>
+          ))}
+        </div>
+
+
+
+
       </div>
 
-
-
-      {/* pdf section  */}
-      <div className="py-12 px-4  font-signika max-w-7xl mx-auto">
-        {closureoftrandingwindow.map((yearGroup, index) => (
-          <div key={index} className="mb-10">
-            <h2 className="text-2xl font-extrabold text-[#0b3a6a] uppercase mb-4">
-              For the Year {yearGroup.year}
-            </h2>
-            <ul className="list-disc pl-5 text-[#0b3a6a] font-medium space-y-2">
-              {yearGroup.reports.map((report, idx) => (
-                <li key={idx}>
-                  <a
-                    href={`/investor/closureoftrandingwindow/${report.file}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {report.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <hr className="mt-4 border-gray-300" />
-          </div>
-        ))}
-      </div>
-
-
-
-
-    </div>
-
-      <Footer/>
-   </>
+      <Footer />
+    </>
   )
 };
 

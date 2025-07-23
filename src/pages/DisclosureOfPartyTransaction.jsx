@@ -8,6 +8,7 @@ const DisclosureOfPartyTransaction = () => {
     {
       title: "",
       items: [
+        { label: "Disclosure of Related Party Transaction - 31.03.2025", file: "Disclosure of Related Party Transaction - 31.03.2025.pdf" },
         { label: "Disclosure of Related Party Transaction – 30.09.2024", file: "Disclosure-of-Related-Party-Transaction-30.09.2024.pdf" },
         { label: "Disclosure of Related Party Transaction – 31.03.2024", file: "Disclosure-of-Related-Party-Transaction-31.03.2024.pdf" },
         { label: "Disclosure of Related Party Transaction – 30.09.2023", file: "Disclosure-of-Related-Party-Transaction-30.09.2023.pdf" },
@@ -67,7 +68,7 @@ const DisclosureOfPartyTransaction = () => {
 
 
       </div>
-        <Footer/>
+      <Footer />
     </>
 
   )

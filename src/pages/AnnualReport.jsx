@@ -12,8 +12,8 @@ const AnnualReport = () => {
     { label: "Annual Return 2021-22", file: "annual-return-form-mgt-7-2021-22.pdf" },
     { label: "Annual Return 2020-21", file: "Annual-Return-2020-21.pdf" },
     { label: "Annual Return 2019-20", file: "Annual-Return-2019-20.pdf" },
-    { label: "For Year 2020-21", file: "For Year 2020-21.pdf" },
-    { label: "For Year 2019-20", file: "For Year 2019-20.pdf" },
+    { label: "For Year 2020-21", file: "Annual Report_2020-21.pdf" },
+    { label: "For Year 2019-20", file: "Annual Report_2019-20.pdf" },
     { label: "For Year 2021-22", file: "Nandan-Annual-Report-2021-22.pdf" },
     { label: "Postal Ballot Notice ", file: "NDL-Postal-Ballot-Notice.pdf" },
   ];
@@ -62,7 +62,7 @@ const AnnualReport = () => {
         </div>
 
       </div>
-        <Footer/>
+      <Footer />
     </>
   )
 };

@@ -9,6 +9,7 @@ const ShareholdingPattern = () => {
     {
       year: 2025,
       reports: [
+        { label: "NDL - Shareholding Pattern - 30.06.2025", file: "NDL - Shareholding Pattern - 30.06.2025.pdf" },
         { label: "NDL – Shareholding Pattern – 31.03.2025", file: "NDL-Shareholding-Pattern-31.03.2025.pdf" },
       ],
     },
@@ -124,53 +125,53 @@ const ShareholdingPattern = () => {
 
 
   return (
-   <>
-   <Header/>
-    <div>
-      {/* Hero Section */}
-      <div className="relative  w-full">
-        <img
-          src="./imgs/investors/investorshareholdingpattern.png"
-          alt="Chiripal Group Banner"
-          className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center">
-          <div className="px-4 sm:px-8 md:px-16 lg:px-32">
-            <h1 className="text-yellow-400 text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif font-bold text-left">
-              Shareholding Pattern
-            </h1>
+    <>
+      <Header />
+      <div>
+        {/* Hero Section */}
+        <div className="relative  w-full">
+          <img
+            src="./imgs/investors/investorshareholdingpattern.png"
+            alt="Chiripal Group Banner"
+            className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32">
+              <h1 className="text-yellow-400 text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif font-bold text-left">
+                Shareholding Pattern
+              </h1>
+            </div>
           </div>
         </div>
-      </div>
-      {/* pdf section  */}
-      <div className="py-12 px-4  max-w-7xl mx-auto font-signika">
-        {shareholdingData.map((yearGroup, index) => (
-          <div key={index} className="mb-10">
-            <h2 className="text-2xl font-extrabold text-[#0b3a6a] uppercase mb-4">
-              For the Year {yearGroup.year}
-            </h2>
-            <ul className="list-disc pl-5 text-[#0b3a6a] font-medium space-y-2">
-              {yearGroup.reports.map((report, idx) => (
-                <li key={idx}>
-                  <a
-                    href={`/investor/shareholdingpatterns/${report.file}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {report.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <hr className="mt-4 border-gray-300" />
-          </div>
-        ))}
-      </div>
+        {/* pdf section  */}
+        <div className="py-12 px-4  max-w-7xl mx-auto font-signika">
+          {shareholdingData.map((yearGroup, index) => (
+            <div key={index} className="mb-10">
+              <h2 className="text-2xl font-extrabold text-[#0b3a6a] uppercase mb-4">
+                For the Year {yearGroup.year}
+              </h2>
+              <ul className="list-disc pl-5 text-[#0b3a6a] font-medium space-y-2">
+                {yearGroup.reports.map((report, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`/investor/shareholdingpatterns/${report.file}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {report.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <hr className="mt-4 border-gray-300" />
+            </div>
+          ))}
+        </div>
 
-    </div>
-      <Footer/>
-   </>
+      </div>
+      <Footer />
+    </>
   )
 };
 

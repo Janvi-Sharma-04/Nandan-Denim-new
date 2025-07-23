@@ -116,7 +116,7 @@ const ContactUs = () => {
                     Nandan Denim Ltd. <br />
                     Chiripal House, Shivranjani Cross Road, <br />
                     Satellite, Ahmedabad – 380 015. Gujarat, India <br />
-                    <strong>Phone:</strong> +91 7926473301
+                    <strong>Phone:</strong> +91 079 69660000
                   </p>
                 </div>
                 <div>

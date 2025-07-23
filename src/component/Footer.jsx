@@ -18,7 +18,7 @@ const Footer = () => {
                         attain the highest value of customer satisfaction.
                     </p>
                     <p className="text-sm mb-2">nandan@chiripalgroup.com</p>
-                    <p className="text-sm mb-5">+91 - 79 26473301</p>
+                    <p className="text-sm mb-5">+91 - 079 69660000</p>
                     <a href="#" className="text-sm underline hover:text-blue-300">
                         Privacy Policy
                     </a>
@@ -33,7 +33,7 @@ const Footer = () => {
 
                 {/* Right (Twitter) */}
                 <div className="border-l border-white/20 pl-6" style={{ fontFamily: ' Signika, sans-serif' }} >
-                  <a href="https://x.com/nandan_denim" target="_blank">  <h4 className="font-sans mb-2">Tweets by nandan_denim</h4></a>
+                    <a href="https://x.com/nandan_denim" target="_blank">  <h4 className="font-sans mb-2">Tweets by nandan_denim</h4></a>
                     {/* You can embed a Twitter widget here or use a placeholder */}
 
                 </div>

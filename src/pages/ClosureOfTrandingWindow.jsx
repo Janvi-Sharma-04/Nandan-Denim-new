@@ -7,12 +7,19 @@ const ClosureOfTrandingWindow = () => {
 
   const closureoftrandingwindow = [
     {
+      year: 2026,
+      reports: [
+        { label: "Closure of Trading Window - Quarter 1", file: "Closure of Trading Window - Quarter 1-2026.pdf" },
+
+      ],
+    },
+    {
       year: 2025,
       reports: [
         { label: "Closure of Trading Window – Quarter 4", file: "Closure-of-Trading-Window-Quarter-4.pdf" },
         { label: "Closure of Trading Window – Quarter 3", file: "Closure-of-Trading-Window-Quarter-3.pdf" },
         { label: "Closure of Trading Window – Quarter 2", file: "Closure-of-Trading-Window-Quarter-2.pdf" },
-        { label: "Closure of Trading Window – Quarter 1", file: "Closure-of-Trading-Window-Quarter-1.pdf" },
+        { label: "Closure of Trading Window – Quarter 1", file: "Closure-of-Trading-Window-Quarter-1 (2).pdf" },
         { label: "Closure of Trading Window – 06.06.2024 to 19.06.2024", file: "Closure-of-Trading-Window-06.06.2024-to19.06.2024.pdf" },
       ],
     },

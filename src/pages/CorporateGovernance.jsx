@@ -12,6 +12,7 @@ const CorporateGovernance = () => {
     {
       year: 2025,
       reports: [
+        { label: "Integrated filing - Governance -June 2025", file: "Integrated filing - Governance -June 2025.pdf" },
         { label: "Integrated Filing- Governance – March 2025", file: "Integrated-Filing-Governance-March-2025.pdf" },
 
       ],
@@ -146,101 +147,101 @@ const CorporateGovernance = () => {
 
 
   return (
-   <>
-   <Header/>
-    <div>
-      {/* Hero Section */}
-      <div className="relative  w-full">
-        <img
-          src="./imgs/investors/investorcorporategovernance.png"
-          alt="Chiripal Group Banner"
-          className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 max-w-7xl flex items-center">
-          <div className="px-4 sm:px-8 md:px-16 lg:px-32">
-            <h1 className="text-yellow-400 text-3xl sm:text-5xl font-montserrat, sans-serif md:text-7xl font-bold text-left">
-              Corporate Governance
-            </h1>
-            <p className="text-white font-serif text-lg sm:text-lg md:text-lg mt-4">
-              Corporate Governance is about commitment to value and ethical business conduct.
-              It is about how an organization is managed.
-            </p>
+    <>
+      <Header />
+      <div>
+        {/* Hero Section */}
+        <div className="relative  w-full">
+          <img
+            src="./imgs/investors/investorcorporategovernance.png"
+            alt="Chiripal Group Banner"
+            className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-30 max-w-7xl flex items-center">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32">
+              <h1 className="text-yellow-400 text-3xl sm:text-5xl font-montserrat, sans-serif md:text-7xl font-bold text-left">
+                Corporate Governance
+              </h1>
+              <p className="text-white font-serif text-lg sm:text-lg md:text-lg mt-4">
+                Corporate Governance is about commitment to value and ethical business conduct.
+                It is about how an organization is managed.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      {/* some  information  */}
-      <div className="max-w-7xl mx-auto   mt-8 mb-12 space-y-2 font-signika text-justify">
-        {/* heading */}
-        <div className="bg-white px-6 font-sans text-sm space-y-2 ">
-          <p className="">Government compliances are regulatory guidelines and parameters that every responsible company has to abide.
-            Being an avid follower of the law, Nandan Denim pledges to contemplate to all
-            the compliances set through by the administration. Here are the government compliances that we sincerely follow</p>
-          <p className="font-medium ">Our corporate governance philosophy is based on the following principles:</p>
-        </div>
-        {/* principles */}
-        <div>
-          <ul className="list-disc px-12 py-1 space-y-1 text-blue-950 font-medium text-sm">
-            <li>Be transparent and maintain a high degree of disclosure</li>
-            <li>Make a clear distinction between personal conveniences and corporate resources</li  >
-            <li>Communicate externally, in a truthful manner, about how the Company is run internally</li>
-            <li>Comply with the laws in all the countries in which we operate</li  >
-            <li>Have a simple and transparent corporate structure driven solely by business needs</li>
-            <li>Management is the trustee of the shareholders’ capital and not the owner</li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      {/* Governance heading */}
-      <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 font-semibold text-2xl font-montserrat, sans-serif">Our previous Corporate Governance Reports can be downloaded here:</p>
-
-
-      {/* Governance Tab Section */}
-      <div className="p-4">
-        <div className="max-w-7xl mx-auto mt-12 mb-10   bg-gray-100 rounded-lg flex flex-col md:flex-row">
-          {/* Year Tabs */}
-          <div className="w-full md:w-1/5 border-r border-gray-300">
-            {governanceData.map((item) => (
-              <button
-                key={item.year}
-                onClick={() => setActiveYear(item.year)}
-                className={`block w-full px-4 py-4 text-left text-sm md:text-base border-b border-gray-300 transition ${activeYear === item.year
-                  ? "bg-gray-100 font-bold text-black"
-                  : "bg-gray-200 hover:bg-gray-300 text-gray-700"
-                  }`}
-              >
-                {item.year}
-              </button>
-            ))}
+        {/* some  information  */}
+        <div className="max-w-7xl mx-auto   mt-8 mb-12 space-y-2 font-signika text-justify">
+          {/* heading */}
+          <div className="bg-white px-6 font-sans text-sm space-y-2 ">
+            <p className="">Government compliances are regulatory guidelines and parameters that every responsible company has to abide.
+              Being an avid follower of the law, Nandan Denim pledges to contemplate to all
+              the compliances set through by the administration. Here are the government compliances that we sincerely follow</p>
+            <p className="font-medium ">Our corporate governance philosophy is based on the following principles:</p>
           </div>
+          {/* principles */}
+          <div>
+            <ul className="list-disc px-12 py-1 space-y-1 text-blue-950 font-medium text-sm">
+              <li>Be transparent and maintain a high degree of disclosure</li>
+              <li>Make a clear distinction between personal conveniences and corporate resources</li  >
+              <li>Communicate externally, in a truthful manner, about how the Company is run internally</li>
+              <li>Comply with the laws in all the countries in which we operate</li  >
+              <li>Have a simple and transparent corporate structure driven solely by business needs</li>
+              <li>Management is the trustee of the shareholders’ capital and not the owner</li>
+            </ul>
+          </div>
+        </div>
 
-          {/* Reports Panel */}
-          <div className="w-full md:w-3/4 px-6 py-4">
-            {governanceData
-              .find((item) => item.year === activeYear)
-              ?.reports.map((report, idx) => (
-                <li key={idx} className="list-disc ml-5 mb-2 text-blue-900 font-signika max-w-7xl mx-auto">
-                  <a
-                    href={`/investor/corporategovernance/${report.file}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {report.label}
-                  </a>
-                </li>
+
+
+        {/* Governance heading */}
+        <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 font-semibold text-2xl font-montserrat, sans-serif">Our previous Corporate Governance Reports can be downloaded here:</p>
+
+
+        {/* Governance Tab Section */}
+        <div className="p-4">
+          <div className="max-w-7xl mx-auto mt-12 mb-10   bg-gray-100 rounded-lg flex flex-col md:flex-row">
+            {/* Year Tabs */}
+            <div className="w-full md:w-1/5 border-r border-gray-300">
+              {governanceData.map((item) => (
+                <button
+                  key={item.year}
+                  onClick={() => setActiveYear(item.year)}
+                  className={`block w-full px-4 py-4 text-left text-sm md:text-base border-b border-gray-300 transition ${activeYear === item.year
+                    ? "bg-gray-100 font-bold text-black"
+                    : "bg-gray-200 hover:bg-gray-300 text-gray-700"
+                    }`}
+                >
+                  {item.year}
+                </button>
               ))}
+            </div>
+
+            {/* Reports Panel */}
+            <div className="w-full md:w-3/4 px-6 py-4">
+              {governanceData
+                .find((item) => item.year === activeYear)
+                ?.reports.map((report, idx) => (
+                  <li key={idx} className="list-disc ml-5 mb-2 text-blue-900 font-signika max-w-7xl mx-auto">
+                    <a
+                      href={`/investor/corporategovernance/${report.file}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {report.label}
+                    </a>
+                  </li>
+                ))}
+            </div>
+
           </div>
-
         </div>
-      </div>
 
-    </div>
-      <Footer/>
-   </>
+      </div>
+      <Footer />
+    </>
 
 
   )

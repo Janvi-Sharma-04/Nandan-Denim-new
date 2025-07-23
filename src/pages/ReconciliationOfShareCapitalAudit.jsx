@@ -9,6 +9,8 @@ const ReconciliationOfShareCapitalAudit = () => {
     {
       title: "",
       items: [
+        { label: "30-June-2025", file: "30-June-2025.pdf" },
+        { label: "31-March-2025", file: "31-March-2025.pdf" },
         { label: "31-December-2024", file: "31-December-2024.pdf" },
         { label: "30-September-2024", file: "30-September-2024.pdf" },
         { label: "30-June-2024", file: "30-June-2024.pdf" },
@@ -51,55 +53,55 @@ const ReconciliationOfShareCapitalAudit = () => {
 
 
   return (
-   <>
-   <Header/>
-    <div>
-      {/* Hero Section */}
-      <div className="relative  w-full">
-        <img
-          src="./imgs/investors/investorsharecapitalaudit.jpg"
-          alt="Chiripal Group Banner"
-          className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center">
-          <div className="px-4 sm:px-8 md:px-16 lg:px-32">
-            <h1 className="text-yellow-400 text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif  font-bold text-left">
-              Reconciliation of Share Capital Audit
-            </h1>
+    <>
+      <Header />
+      <div>
+        {/* Hero Section */}
+        <div className="relative  w-full">
+          <img
+            src="./imgs/investors/investorsharecapitalaudit.jpg"
+            alt="Chiripal Group Banner"
+            className="object-cover w-full h-full md:h-[70vh] lg:h-[80vh] xl:h-[88vh]"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32">
+              <h1 className="text-yellow-400 text-3xl sm:text-5xl md:text-7xl font-montserrat, sans-serif  font-bold text-left">
+                Reconciliation of Share Capital Audit
+              </h1>
+            </div>
           </div>
         </div>
+
+
+        {/* pdf sections */}
+        <div className="py-12 px-4  font-signika max-w-7xl mx-auto ">
+          {sharecapitalaudit.map((section, index) => (
+            <div key={index} className="mb-12">
+              <h2 className="text-xl font-extrabold text-[#0b3a6a] mb-4">{section.title}</h2>
+              <ul className="list-disc pl-6 space-y-2 text-[#0b3a6a]">
+                {section.items.map((item, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={`/investor/ReconciliationOfShareCapitalAudit/${item.file}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              {index < sharecapitalaudit.length - 1 && (
+                <hr className="mt-6 border-gray-300" />
+              )}
+            </div>
+          ))}
+        </div>
+
       </div>
-
-
-      {/* pdf sections */}
-      <div className="py-12 px-4  font-signika max-w-7xl mx-auto ">
-        {sharecapitalaudit.map((section, index) => (
-          <div key={index} className="mb-12">
-            <h2 className="text-xl font-extrabold text-[#0b3a6a] mb-4">{section.title}</h2>
-            <ul className="list-disc pl-6 space-y-2 text-[#0b3a6a]">
-              {section.items.map((item, idx) => (
-                <li key={idx}>
-                  <a
-                    href={`/investor/ReconciliationOfShareCapitalAudit/${item.file}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            {index < sharecapitalaudit.length - 1 && (
-              <hr className="mt-6 border-gray-300" />
-            )}
-          </div>
-        ))}
-      </div>
-
-    </div>
-      <Footer/>
-   </>
+      <Footer />
+    </>
   )
 };
 

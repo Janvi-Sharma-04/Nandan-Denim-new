@@ -21,7 +21,7 @@ const navItems = [
                 ]
             },
             { path: "/chiripal-group", label: "Chiripal Group" },
-            { path: "https://nandandenim.com/wp-content/uploads/2022/01/KM_206_19254.pdf", label: "Group Data", }
+            { path: "", label: "Group Data", }
         ]
     },
     {

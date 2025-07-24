@@ -86,7 +86,7 @@ function App() {
         <Route path="/ceo-message" element={<CeoMessage />} />
         <Route path="/board-of-director" element={<BoardOfDirector />} />
         <Route path="/chiripal-group" element={<ChiripalGroup />} />
-        <Route path="https://nandandenim.com/wp-content/uploads/2022/01/KM_206_19254.pdf" element={<GroupData />} />
+        <Route path="" element={<GroupData />} />
 
         {/* products */}
         <Route path="/products" element={<Products />} />

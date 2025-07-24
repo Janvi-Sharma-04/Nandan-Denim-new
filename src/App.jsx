@@ -86,7 +86,7 @@ function App() {
         <Route path="/ceo-message" element={<CeoMessage />} />
         <Route path="/board-of-director" element={<BoardOfDirector />} />
         <Route path="/chiripal-group" element={<ChiripalGroup />} />
-        <Route path="" element={<GroupData />} />
+        <Route path="/groupdata" element={<GroupData />} />
 
         {/* products */}
         <Route path="/products" element={<Products />} />

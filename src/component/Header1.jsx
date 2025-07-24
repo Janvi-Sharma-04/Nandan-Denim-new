@@ -21,7 +21,7 @@ const navItems = [
                 ]
             },
             { path: "/chiripal-group", label: "Chiripal Group" },
-            { path: "", label: "Group Data", }
+            { path: "/groupdata", label: "Group Data", }
         ]
     },
     {
